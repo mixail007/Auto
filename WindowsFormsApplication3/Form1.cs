@@ -213,7 +213,7 @@ namespace GaikovBSUIR
             relationdvig_com.ChildColumnNames.Add("id_Авто");
             this.radGridView1.Relations.Add(relationdvig_com);
 
-          
+          //
         }
 
 
