@@ -100,6 +100,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Auto.edmx</DependentUpon>
     </Compile>
+    <Compile Include="AutoDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AutoDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Color.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -250,6 +255,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Report1.rdlc" />
     <EmbeddedResource Include="ReportViewerFormZakaz.resx">
       <DependentUpon>ReportViewerFormZakaz.cs</DependentUpon>
     </EmbeddedResource>
@@ -269,9 +275,21 @@
     <None Include="Auto.edmx.diagram">
       <DependentUpon>Auto.edmx</DependentUpon>
     </None>
+    <None Include="AutoDataSet.xsc">
+      <DependentUpon>AutoDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="AutoDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AutoDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AutoDataSet.xss">
+      <DependentUpon>AutoDataSet.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\DataSources\Автомобили.datasource" />
     <None Include="Properties\DataSources\ЗаказПокупателя.datasource" />
+    <None Include="Properties\DataSources\ЗаказПокупателяТаблЧасть.datasource" />
     <None Include="Properties\DataSources\ТипКПП.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -282,9 +300,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Content Include="Reports\SampleReport.trdx">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -318,6 +333,9 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Reports\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
