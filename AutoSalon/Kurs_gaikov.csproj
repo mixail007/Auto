@@ -244,7 +244,6 @@
     <EmbeddedResource Include="PriceTypes.resx">
       <DependentUpon>PriceTypes.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -255,7 +254,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Report1.rdlc" />
     <EmbeddedResource Include="ReportViewerFormZakaz.resx">
       <DependentUpon>ReportViewerFormZakaz.cs</DependentUpon>
     </EmbeddedResource>
@@ -287,10 +285,8 @@
       <DependentUpon>AutoDataSet.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
-    <None Include="Properties\DataSources\Автомобили.datasource" />
     <None Include="Properties\DataSources\ЗаказПокупателя.datasource" />
     <None Include="Properties\DataSources\ЗаказПокупателяТаблЧасть.datasource" />
-    <None Include="Properties\DataSources\ТипКПП.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
