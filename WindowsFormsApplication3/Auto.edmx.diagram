@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="fad8005be71841f49f4d99bf9bc2189a" Name="Diagram1" ZoomLevel="91">
+        <EntityTypeShape EntityType="AutoModel.Валюты" Width="1.5" PointX="0.75" PointY="10.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="AutoModel.ВариантыКомплектации" Width="1.5" PointX="5.25" PointY="7.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="AutoModel.ДоговорыВзаиморасчетов" Width="1.5" PointX="3" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="AutoModel.ЕдиницыИзмерения" Width="1.5" PointX="5.25" PointY="25.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AutoModel.ЗаказПокупателяТаблЧасть" Width="1.5" PointX="7.5" PointY="14.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="AutoModel.Контрагенты" Width="1.5" PointX="0.75" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="AutoModel.ТипЗаказа" Width="1.5" PointX="3" PointY="16" IsExpanded="true" />
+        <EntityTypeShape EntityType="AutoModel.ТипКПП" Width="1.5" PointX="7.5" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="AutoModel.ТипКузова" Width="1.5" PointX="7.5" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="AutoModel.ТипСалона" Width="1.5" PointX="5.25" PointY="20.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="AutoModel.ТипыДвигателей" Width="1.5" PointX="7.5" PointY="10.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="AutoModel.ТипыЦен" Width="1.5" PointX="3" PointY="18.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="AutoModel.Цвет" Width="1.5" PointX="5.25" PointY="22.875" IsExpanded="true" />
+        <AssociationConnector Association="AutoModel.FK_ТипКПП_ВариантыКомплектации" ManuallyRouted="false" />
+        <AssociationConnector Association="AutoModel.FK_ТипКузова_ВариантыКомплектации" ManuallyRouted="false" />
+        <AssociationConnector Association="AutoModel.FK_ТипыДвигателей_ВариантыКомплектации" ManuallyRouted="false" />
+        <AssociationConnector Association="AutoModel.FK_ЗаказПокупателяТаблЧасть_ЕдиницыИзмерения" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="AutoModel.Автомобили" Width="1.5" PointX="3" PointY="8.25" />
+        <AssociationConnector Association="AutoModel.FK_Автомобили_Валюты" />
+        <AssociationConnector Association="AutoModel.FK_Автомобили_Контрагенты" />
+        <AssociationConnector Association="AutoModel.FK_ВариантыКомплектации_Автомобили" />
+        <AssociationConnector Association="AutoModel.FK_ТипСалона_Автомобили" />
+        <AssociationConnector Association="AutoModel.FK_Цвет_Автомобили1" />
+        <EntityTypeShape EntityType="AutoModel.ЗаказПокупателя" Width="1.5" PointX="5.25" PointY="11.5" />
+        <AssociationConnector Association="AutoModel.FK_ЗаказПокупателя_Автомобили" />
+        <AssociationConnector Association="AutoModel.FK_ЗаказПокупателя_Валюты" />
+        <AssociationConnector Association="AutoModel.FK_ЗаказПокупателя_ДоговорыВзаиморасчетов" />
+        <AssociationConnector Association="AutoModel.FK_ЗаказПокупателя_Контрагенты" />
+        <AssociationConnector Association="AutoModel.FK_ЗаказПокупателя_ТипЗаказа" />
+        <AssociationConnector Association="AutoModel.FK_ЗаказПокупателя_ТипыЦен" />
+        <AssociationConnector Association="AutoModel.FK_ЗаказПокупателяТаблЧасть_ЗаказПокупателя" />
+        <EntityTypeShape EntityType="AutoModel.ЗаказВид" Width="1.5" PointX="10.375" PointY="0.75" />
+        </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
