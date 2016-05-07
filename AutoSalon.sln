@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kurs_gaikov", "WindowsFormsApplication3\Kurs_gaikov.csproj", "{3E624932-44AD-41CB-ACEE-71E796C3A824}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kurs_gaikov", "AutoSalon\Kurs_gaikov.csproj", "{3E624932-44AD-41CB-ACEE-71E796C3A824}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
