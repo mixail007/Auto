@@ -72,6 +72,7 @@ namespace GaikovBSUIR
 
         private void Color_FormClosing(object sender, FormClosingEventArgs e)
         {
+
             try
             {
                 this.db.SaveChanges();
